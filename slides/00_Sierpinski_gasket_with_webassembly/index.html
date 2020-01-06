@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0,
       maximum-scale=1.0, user-scalable=no">
 
-    <title>reveal.js</title>
+    <title>WebAssembly を使って、Sierpinski の三角形を描いてみた</title>
 
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/reveal.css">
-    <link rel="stylesheet" href="../css/theme/black.css">
+    <link rel="stylesheet" href="../lib/css/reset.css">
+    <link rel="stylesheet" href="../lib/css/reveal.css">
+    <link rel="stylesheet" href="../lib/css/theme/black.css">
     <style type="text/css">
       .reveal h1,
       .reveal h2,
@@ -22,7 +22,7 @@
     </style>
 
     <!-- Theme used for syntax highlighting of code -->
-    <link rel="stylesheet" href="lib/css/monokai.css">
+    <link rel="stylesheet" href="../lib/lib/css/monokai.css">
 
 
     <!-- Printing and PDF exports -->
@@ -42,15 +42,15 @@
           data-separator-vertical="^\n>>>\n$"></section>
       </div>
     </div>
-    <script src="js/reveal.js"></script>
+    <script src="../lib/js/reveal.js"></script>
 
     <script>
             Reveal.initialize({
                 dependencies: [
-                    { src: 'plugin/markdown/marked.js' },
-                    { src: 'plugin/markdown/markdown.js' },
-                    { src: 'plugin/notes/notes.js', async: true },
-                    { src: 'plugin/highlight/highlight.js', async: true }
+                    { src: '../lib/plugin/markdown/marked.js' },
+                    { src: '../lib/plugin/markdown/markdown.js' },
+                    { src: '../lib/plugin/notes/notes.js', async: true },
+                    { src: '../lib/plugin/highlight/highlight.js', async: true }
                 ]
             });
         </script>
