@@ -83,7 +83,7 @@
 
 - 201
   - キャパシティプランニング (vmstat, top, lsof)
-  - Linuxカーネル (install, patch)
+  - Linuxカーネル (make install, patch)
   - システム起動 (grub, initramfs, /etc/initab)
   - ファイルシステムとデバイス(mkfs, /etc/fstab)
   - 高度なストレージデバイスの管理 (RAID, LVM, udev)
@@ -96,7 +96,7 @@
   - ドメインネームサーバー (BIND)
   - ウェブサービス (Apache, Nginx)
   - ファイル共有 (Samba, NFS)
-  - ネットワーククライアント管理 (DHCP, LDAP)
+  - ネットワーククライアント管理 (DHCP, LDAP, PAM)
   - 電子メールサービス (postfix, dovecot)
   - システムセキュリティ (カーネルパラメータ、iptables, VPN)
 
