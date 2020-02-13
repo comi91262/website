@@ -91,7 +91,8 @@ Successfully tagged example/rmrf:latest
 
 ### コンテナを作成し、実行中に
 
-- そのまま実行すると、コンテナが停止するため -it でアクセス
+- そのまま実行すると、コンテナが停止中に遷移する
+- it で, あたかもSSHログインしたかのように端末を起動できる
 
 ```
 xxx:~$ docker container run -it --name rmrf example/rmrf:latest
@@ -289,12 +290,16 @@ rm: cannot remove '/etc/hosts': Device or resource busy
 
 >>>
 
-### 原因はDocker Engine にあるみたい 
-
+### stackoverflowによると
 
 - コンテナの作成時, ホストのディレクトリをコンテナ側にマウントできる
-- /etc 以下でその機能を使うと hosts, hostname が上書きされてしまい, 最悪コンテナと疎通ができなくなる
-- あくまで 以下の stackoverflow の言い分
+- /etc 以下でその機能を使うと hosts, hostname が上書きされてしまう
 
 https://stackoverflow.com/questions/56578998/what-is-the-meaning-of-mounting-dev-sda1-to-etc-hosts-in-docker-container
 
+>>>
+
+### 原因はDocker Engineにありそう
+
+- /etc/hosts が上書きされると, コンテナとの疎通ができなくなってしまう
+- docker側がセーフティをかけている?
