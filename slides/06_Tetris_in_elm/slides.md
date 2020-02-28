@@ -36,7 +36,7 @@
 
 ### Elmをさわる動機
 
-- JavaScript, React の先へ
+- JQuery, React の先へ
 - いい加減重い腰をあげる
 
 ---
@@ -165,6 +165,18 @@ type Tile
 type Tetrimino
     = I | O | S | Z | J | L | T
 ```
+
+---
+
+### Init
+
+init : ( Model, Cmd Msg )
+init =
+    let
+        board =
+            List.initialize 200 (\n -> None) ++ List.initialize 10 (\n -> Wall)
+    in
+    ( { board = putTetrimino 4 0 I board }, Cmd.none )
 
 ---
 
