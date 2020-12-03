@@ -163,6 +163,7 @@ type Tetrimino
 
 ### Init
 
+```
 init : ( Model, Cmd Msg )
 init =
     let
@@ -170,6 +171,7 @@ init =
             List.initialize 200 (\n -> None) ++ List.initialize 10 (\n -> Wall)
     in
     ( { board = putTetrimino 4 0 I board }, Cmd.none )
+```
 
 ---
 
