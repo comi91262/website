@@ -34,12 +34,10 @@ https://github.com/kamranahmedse/developer-roadmap
 
 ### DevOps?
 
-```
-高い品質を確保しつつ、システムへの変更をコミットしてから通常の運用に
-移るまでの時間を短縮することを目的とした一連のプラクティス
-```
-- wikipedia「DevOps」
-- 技術的にはCI/CDのことだと思っていただければ
+- Dev: Development (開発), Ops: Operation (運用)
+- 昔: 開発と運用は完全に分かれていた
+- 今: お互い手を取り合って、より効率良くプロダクト開発をしよう
+- 技術的にはCI/CDのこと
 
 ---
 
