@@ -100,7 +100,6 @@ npm install -g elm
 - elm reactor
     - サーバー起動
     - ファイルのコンパイル
-    - ホットローディング
 - elm make
     - コンパイルする
 - elm install
@@ -124,16 +123,10 @@ npm install -g elm
 
 ---
 
-### 妥協点
-
-- 回転は未実装
-- 他にもいろいろ
-
----
-
 ### 先にものをみせます
 
-- 441行くらい
+- https://github.com/ykonomi/elm-tetris
+- 518行くらい
 
 ---
 
